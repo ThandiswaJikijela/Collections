@@ -5,4 +5,9 @@ public class WithSpringImpl implements WithSpringInterface {
     public String add(String a, String b) {
         return a + b;
     }
+    
+     @Override
+    public int sub(int c, int d) {
+        return c - d;
+    }
 }
