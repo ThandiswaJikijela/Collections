@@ -28,6 +28,11 @@ public class TestWithSpring {
         String c = inter.add("Thandiswa","Jikijela");
         Assert.assertEquals("","ThandiswaJikijela",c);
     }
+    
+    @Test
+    public void subtration(){
+        Assert.assertEquals(12,inter.sub(18,6));
+    }
 
 
 }
