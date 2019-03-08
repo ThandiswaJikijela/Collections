@@ -3,7 +3,7 @@ package ac.za.cput.project2;
 import java.util.*;
 
 public class CollectionsInterface {
-    private void Collection()
+   public Collection<String> Collection()
     {
         Collection<String> collection = new HashSet<>();
         collection.add("List");
@@ -15,9 +15,10 @@ public class CollectionsInterface {
 
         System.out.println("\n");
 
+        return collection;
     }
 
-    private void List()
+    public List<String> List()
     {
         List<String> actors = new ArrayList<>();
         //List Interface
@@ -37,9 +38,10 @@ public class CollectionsInterface {
         System.out.println("The list does contains : " + actors.contains("Brad Pet"));
 
         System.out.println("\n");
+        return actors;
     }
 
-    private void Set()
+    public Set<String> Set()
     {
         //Set Interface
         Set<String> elements = new HashSet<>();
@@ -54,10 +56,11 @@ public class CollectionsInterface {
         System.out.println("Elements are  : " +elements.size());
 
         System.out.println("\n");
+        return elements;
     }
 
 
-    private void Map()
+    public Map Map()
     {
         //Map
         Map map = new HashMap();
@@ -74,6 +77,7 @@ public class CollectionsInterface {
             Map.Entry entry = (Map.Entry) itrr.next();
             System.out.println("Map ID: " + entry.getKey() + " Has color : " + entry.getValue());
         }
+        return map;
     }
     public static void main(String[] args) {
 
